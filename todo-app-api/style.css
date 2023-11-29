@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#form-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ccc;
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#newTodo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+#btn-add,
+#btn-remove {
+  margin-top: 5px;
+  padding: 6px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  display: block;
+  width: 100%;
+}
+
+#btn-add:hover,
+#btn-remove:hover {
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todoItem input {
+  margin-right: 4px;
+}
+
+input[type="radio"] {
+  margin-right: 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #form-container {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  #newTodo,
+  #btn-add,
+  #btn-remove {
+    font-size: 14px;
+  }
+}
